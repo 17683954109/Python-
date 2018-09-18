@@ -8,7 +8,7 @@ import time
 
 
 def get_file():
-    os.chdir(r'C:\Users\admin\Desktop\python\img')
+    os.chdir(r'C:\Users\admin\Desktop\python\img') # TODO: 此处路径请自行修改
     f = open('../http.txt', 'r')
     num = 0
     headers = {'Accept': '*/*',

@@ -32,7 +32,7 @@ def get_url(page, words):
         content = response.content.decode("utf-8", "ignore")
     except UnicodeDecodeError as s:
         content = response.content
-    os.chdir(r'C:\Users\Admin\Desktop\python')
+    os.chdir(r'C:\Users\Admin\Desktop\python') # TODO: 此处路径请自行修改
     f = open('http.txt', 'a', encoding='utf8')
     try:
         res = re.findall('data-original="http[s]?://[^\s]*\.[jpg]{3}|[png]{3}"\s$', content)
