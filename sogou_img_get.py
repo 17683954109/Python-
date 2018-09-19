@@ -24,7 +24,7 @@ headers = {'Accept': '*/*',
 base_url = "http://pic.sogou.com/pics?{}&w=05009900&p=40030500&_asf=pic.sogou.com&_ast=1537249444&sc=index&sut=2123&sst0=1537249444305".format(word)
 response = requests.get(base_url, headers)
 content = response.content.decode("utf-8", "ignore")
-os.chdir(r'C:\Users\Admin\Desktop\python') # TODO: 此处路径请自行修改
+os.chdir(r'/home/coding/workspace/PyWeb') # TODO: 此处路径请自行修改
 f = open('http.txt', 'a', encoding='utf-8')
 res = re.findall('"pic_url":"http[s]?://[^,]*\.[jpg]{3}|[png]{3}?",$', content)
 
